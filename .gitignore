@@ -1,0 +1,17 @@
+# Python
+*.pyc
+__pycache__/
+*.pyd
+
+# Virtual Environment
+venv/
+.env
+
+# Logs and Databases
+*.log
+*.sql
+*.sqlite3
+*.db
+*.bak
+*.dump
+*.sqlite3
