@@ -146,7 +146,18 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # novo modelo: usuario
 AUTH_USER_MODEL = "usuario.Usuario"
 
+# SMTP
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config('SMTP_HOST')
+EMAIL_PORT = config('SMTP_PORT')
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config('SMTP_USER')
+EMAIL_HOST_PASSWORD = config('SMTP_PASSWORD')
+DEFAULT_FROM_EMAIL = config('SMTP_EMAIL')
 
+EMAIL_URL = config('SMTP_URL')
+EMAIL_API = config('SMTP_EMAIL_API')
+EMAIL_API_TOKEN = config('SMTP_API_TOKEN')
 
 
 
